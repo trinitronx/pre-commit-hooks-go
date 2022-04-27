@@ -18,11 +18,13 @@ import (
 
 var (
 	usage = `checkmake.
+
   Usage:
   checkmake [options] <makefile>
   checkmake -h | --help
   checkmake --version
   checkmake --list-rules
+
   Options:
   -h --help               Show this screen.
   --version               Show version.
@@ -52,7 +54,9 @@ func main() {
 
 	formatter, violations := parseArgsAndGetFormatter(args)
 
-	formatter.Format(violations)
+	if len(violations) > 0 {
+		formatter.Format(violations)
+	}
 
 	os.Exit(len(violations))
 }

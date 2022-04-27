@@ -1,4 +1,4 @@
--   repo: https://github.com/Lucas-C/pre-commit-hooks-go
-    sha: v1.0.1
+-   repo: https://github.com/trinitronx/pre-commit-hooks-go
+    rev: f4c381406e5db777dc3ef64ef007a269b0fe8e13
     hooks:
     -   id: checkmake

@@ -1,4 +1,4 @@
 -   repo: https://github.com/trinitronx/pre-commit-hooks-go
-    rev: 986160298cf18279be8afcfbca9e0cc6d86d134c
+    rev: 73e6f060a3908df5130f61cdd195c448a39aa710
     hooks:
     -   id: checkmake
